@@ -19,10 +19,6 @@ public class Elevation2020 {
         long Result = 50000 + (10*(Number1+Number2+Number3));
         System.out.println(Result);
 
-        //Exercise 2
-        int myIntValue = 5;
-        float myFloatValue = 5.5f;
-        double myDoubleValue = 5.25d;
 
     }
 }
