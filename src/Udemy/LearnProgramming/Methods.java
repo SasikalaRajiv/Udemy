@@ -15,12 +15,13 @@ public class Methods {
         System.out.println(PlayerName+" has managed to get into position "+Position+" on the high score table");
     }
     public static int CalculateHighScorePosition(int Score){
+        int Position=4;
         if(Score>=1000)
-            return 1;
-        else if(Score>=500 && Score<1000)
-            return 2;
-        else if(Score>=100 && Score<500)
-            return 3;
-        else return 4;
+            Position= 1;
+        else if(Score>=500)
+            Position= 2;
+        else if(Score>=100)
+            Position=3;
+        return Position;
     }
 }
