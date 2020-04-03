@@ -11,14 +11,13 @@ public class IfThenElse {
         int BonusPoints = input.nextInt();
         CalculateFinalScore(isGameOver,Score,LevelCompleted,BonusPoints);
     }
-        public static void CalculateFinalScore(boolean isGameOver, int Score,int LevelCompleted,int BonusPoints){
+        public static int CalculateFinalScore(boolean isGameOver, int Score,int LevelCompleted,int BonusPoints){
             if (isGameOver) {
                 int FinalScore = Score + (LevelCompleted * BonusPoints);
                 System.out.println("Your final score is: " + FinalScore);
+                return FinalScore;
             }
-            else {
-                System.out.println("Continue to next level");
-            }
+                return -1;
         }
         }
 
